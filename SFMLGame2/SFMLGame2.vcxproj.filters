@@ -21,19 +21,37 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="IdleState.cpp">
+    <ClCompile Include="Core\State\PlayerState\IdleState.cpp">
       <Filter>Source Files\State</Filter>
     </ClCompile>
-    <ClCompile Include="JumpState.cpp">
+    <ClCompile Include="Core\State\PlayerState\JumpState.cpp">
       <Filter>Source Files\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Player\Player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\State\PlayerState\MovingState.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Player.hpp">
+    <ClInclude Include="Core\State\State.hpp">
+      <Filter>Source Files\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Player\Player.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\State\PlayerState\IdleState.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Sate.hpp">
-      <Filter>Source Files\State</Filter>
+    <ClInclude Include="Core\State\PlayerState\JumpState.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\State\PlayerState\PlayerState.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\State\PlayerState\MovingState.hpp">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
