@@ -28,6 +28,7 @@ PlayerState* JumpState::update(Player* player, float deltaTime) {
 	}
 	std::cout << "Jump force: " << jumpForce << " " << " player y: " << player->shape.getPosition().y;
 	if (player->shape.getPosition().y >= 300) {
+		player->shape.setPosition(player->shape.getPosition().x, 300);
 		return new IdleState(player);
 	}
 	return NULL;

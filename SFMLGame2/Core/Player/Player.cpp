@@ -3,7 +3,7 @@
 
 Player::Player() : state(nullptr), name("player1"), shape(30.f) {
 	this->state = new IdleState(this);
-	shape.setOrigin(0, 0);
+	shape.setOrigin(30, 30);
 	shape.setPosition(400, 300);
 	shape.setFillColor(sf::Color::Green);
 };

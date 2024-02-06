@@ -3,6 +3,7 @@
 #include "Player.hpp"
 #include "IdleState.hpp"
 #include "JumpState.hpp"
+#include "Core/Enemy/Enemy.hpp"
 
 int main()
 {
@@ -10,6 +11,7 @@ int main()
     window.setFramerateLimit(60);
 
     Player player;
+    Enemy enemy;
     sf::Clock clock;
 
     while (window.isOpen())
@@ -23,7 +25,7 @@ int main()
                 window.close();
         }
 
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) { 
             player.input(sf::Keyboard::Right);
         }
 
@@ -36,9 +38,11 @@ int main()
         }
 
         player.update(deltaTime);
+        enemy.update(&player, deltaTime);
 
         window.clear();
         window.draw(player.shape);
+        window.draw(enemy.shape);
         window.display();
     }
 

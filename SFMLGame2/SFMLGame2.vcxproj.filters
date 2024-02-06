@@ -33,6 +33,15 @@
     <ClCompile Include="Core\State\PlayerState\MovingState.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Core\Enemy\Enemy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\State\EnemyState\EnemyIdleState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\State\EnemyState\EnemyPursueState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Core\State\State.hpp">
@@ -51,6 +60,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Core\State\PlayerState\MovingState.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Enemy\Enemy.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\State\EnemyState\EnemyIdleState.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\State\EnemyState\EnemyState.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\State\EnemyState\EnemyPursueState.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

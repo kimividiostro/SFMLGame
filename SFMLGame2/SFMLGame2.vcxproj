@@ -137,6 +137,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Core\Enemy\Enemy.cpp" />
+    <ClCompile Include="Core\State\EnemyState\EnemyIdleState.cpp" />
+    <ClCompile Include="Core\State\EnemyState\EnemyPursueState.cpp" />
     <ClCompile Include="Core\State\PlayerState\IdleState.cpp" />
     <ClCompile Include="Core\State\PlayerState\JumpState.cpp" />
     <ClCompile Include="Core\State\PlayerState\MovingState.cpp" />
@@ -147,10 +150,14 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>
+    <ClInclude Include="Core\Enemy\Enemy.hpp" />
     <ClInclude Include="Core\Player\Player.hpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClInclude>
+    <ClInclude Include="Core\State\EnemyState\EnemyIdleState.hpp" />
+    <ClInclude Include="Core\State\EnemyState\EnemyPursueState.hpp" />
+    <ClInclude Include="Core\State\EnemyState\EnemyState.hpp" />
     <ClInclude Include="Core\State\PlayerState\IdleState.hpp" />
     <ClInclude Include="Core\State\PlayerState\JumpState.hpp" />
     <ClInclude Include="Core\State\PlayerState\MovingState.hpp" />
